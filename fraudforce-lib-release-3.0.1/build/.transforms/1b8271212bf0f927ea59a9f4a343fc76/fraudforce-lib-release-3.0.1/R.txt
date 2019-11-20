@@ -1,0 +1,2 @@
+int string ff_ep 0x7f150001
+int string ff_sdk_ver 0x7f150002

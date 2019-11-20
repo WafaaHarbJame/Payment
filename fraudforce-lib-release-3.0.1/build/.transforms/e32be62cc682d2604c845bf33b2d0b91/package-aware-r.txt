@@ -1,0 +1,3 @@
+com.iovation.deviceprint.lib.DevicePrint
+string ff_ep
+string ff_sdk_ver

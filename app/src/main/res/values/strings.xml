@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="checkout_ui_callback_scheme">checkoutui</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">customui</string>
+    <string name="error_message">هناك خطأ ما</string>
+    <string name="button_ok">OK</string>
+    <string name="message_successful_payment">The payment was successful</string>
+    <string name="message_unsuccessful_payment">"The payment was unsuccessful"</string>
+    <string name="progress_message_please_wait">Please wait…</string>
+    <string name="progress_message_checkout_id">Getting the checkout id…</string>
+    <string name="progress_message_checkout_info">Getting the checkout info…</string>
+    <string name="progress_message_payment_status">Getting the payment status…</string>
+    <string name="progress_message_processing_payment">Processing payment…</string>
+</resources>

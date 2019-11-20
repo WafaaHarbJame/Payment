@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ff_ep" translatable="false">https://mobile.confsettings.com/</string>
+    <string name="ff_sdk_ver" translatable="false">3.0.1</string>
+</resources>
