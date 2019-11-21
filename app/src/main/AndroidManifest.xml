@@ -21,17 +21,13 @@
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <intent-filter>
                 <data
                     android:scheme="@string/checkout_ui_callback_scheme"
                     tools:ignore="ManifestResource" />
-
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
@@ -53,6 +49,7 @@
         <receiver
             android:name=".CheckoutBroadcastReceiver"
             android:exported="false" />
+
     </application>
 
 </manifest>

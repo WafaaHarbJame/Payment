@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -121,16 +122,16 @@ public class MainActivity extends AppCompatActivity implements CheckoutIdRequest
 
 
                 try {
-                    Log.d("RequestPaymentStatus", "RequestPaymentStatus " + response);
+                    Log.e("RequestPaymentStatus", "RequestPaymentStatus " + response);
 
                     hideProgressDialog();
                     JSONObject r = new JSONObject(response);
-                    Log.e("RequestPaymentStatus", "RequestPaymentStatus " + r);
-//
-//                    JSONObject result = r.getJSONObject("result");
-//                    String description = result.getString("description");
-//                    Toast.makeText(PaymaenActivity.this, "description" + description, Toast.LENGTH_SHORT).show();
-//                    Log.d("description", "description " + description);
+                 Log.e("RequestPaymentStatus", "RequestPaymentStatus " + r);
+
+                    JSONObject result = r.getJSONObject("result");
+                   String description = result.getString("description");
+                   Toast.makeText(MainActivity.this, "description" + description, Toast.LENGTH_SHORT).show();
+                  Log.e("description", "description " + description);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -202,9 +203,9 @@ public class MainActivity extends AppCompatActivity implements CheckoutIdRequest
                 checkoutId, Constants.Config.PAYMENT_BRANDS,
                 Connect.ProviderMode.TEST
         )
-                .setSkipCVVMode(CheckoutSkipCVVMode.FOR_STORED_CARDS);
+                .setSkipCVVMode(CheckoutSkipCVVMode.FOR_STORED_CARDS)
 //                .setShopperResultUrl(callbackScheme);
-               // .setShopperResultUrl("checkoutui://result");
+                .setShopperResultUrl("checkoutui://result");
         //                .setGooglePayPaymentDataRequest(getGooglePayRequest())
     }
 

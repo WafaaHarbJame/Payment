@@ -12,7 +12,7 @@ public class Constants {
         /* The payment brands for Ready-to-Use UI and Payment Button */
         public static final Set<String> PAYMENT_BRANDS;
 
-        
+
         static {
             PAYMENT_BRANDS = new LinkedHashSet<>();
 
