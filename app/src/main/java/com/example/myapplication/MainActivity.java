@@ -202,9 +202,9 @@ public class MainActivity extends AppCompatActivity implements CheckoutIdRequest
                 checkoutId, Constants.Config.PAYMENT_BRANDS,
                 Connect.ProviderMode.TEST
         )
-                .setSkipCVVMode(CheckoutSkipCVVMode.FOR_STORED_CARDS)
+                .setSkipCVVMode(CheckoutSkipCVVMode.FOR_STORED_CARDS);
 //                .setShopperResultUrl(callbackScheme);
-                .setShopperResultUrl("checkoutui://result");
+               // .setShopperResultUrl("checkoutui://result");
         //                .setGooglePayPaymentDataRequest(getGooglePayRequest())
     }
 

@@ -17,6 +17,7 @@ public class CheckoutBroadcastReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
 
+
         if (CheckoutActivity.ACTION_ON_BEFORE_SUBMIT.equals(action)) {
             String paymentBrand = intent.getStringExtra(CheckoutActivity.EXTRA_PAYMENT_BRAND);
             String checkoutId = intent.getStringExtra(CheckoutActivity.EXTRA_CHECKOUT_ID);
